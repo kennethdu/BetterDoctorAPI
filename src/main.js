@@ -5,7 +5,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { getIssue, getDoctor } from './doctor.js';
-const Promise = require('es6-promise').Promise;
 
 $(document).ready(function() {
     $("#nameForm").submit(function(event){

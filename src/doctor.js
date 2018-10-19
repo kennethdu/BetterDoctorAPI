@@ -1,3 +1,6 @@
+const Promise = require('es6-promise').Promise;
+
+
 export function getDoctor(firstName, lastName){
     return new Promise(function(resolve, reject){
         let request = new XMLHttpRequest();
