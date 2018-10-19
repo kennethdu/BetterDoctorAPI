@@ -4,19 +4,27 @@
     <title>BetterDoctorAPI</title>
   </head>
   <body>
-    <p>BetterDoctorAPI</p>
+    <h1>Doctor Lookup</h1>
       <form id="nameForm">
       <div class="form-group">
-        <label for="name">A name</label>
-        <input id="name" class="form-control" type="text">
+        <h2>Search by name:</h2>
+        <label for="name">First Name</label>
+        <input id="firstName" class="form-control" type="text">
+        <label for="name">Last Name</label>
+        <input id="lastName" class="form-control" type="text">
       </div>
+      <button id="name" type="submit">Submit</button>
+      </form>
+      <h2>Search by medical issue:</h2>
       <form id="issueForm">
       <div class="form-group">
-        <label for="issue">A name</label>
+        <label for="issue">Medical Issue</label>
         <input id="issue" class="form-control" type="text">
       </div>
+      <button id ="issue" type ="submit">Submit</button>
+      </form>
 
-      <div id ="nameResults"></div>
+      <div id="nameResults"></div>
       <div id="issueResults"></div>
 
   </body>
