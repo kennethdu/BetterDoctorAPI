@@ -21,7 +21,8 @@ $(document).ready(function() {
             let body = JSON.parse(response);
             if(body.data.length > 0){
                 for(let i =0; i < body.data.length; i++){
-                    $("#nameResults").append(`<h2>${body.data[i].practices[0].visit_address.street}</h2>`);
+                    $("#nameResults").append(`<h1>${firstName} ${lastName}</h1>
+                    <h4>${body.data[i].practices[0].visit_address.street}</h4>`);
                 }
             }else{
                 $("#nameResult").append("There are no doctors matching your criteria");
