@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,7 +47,6 @@ $(document).ready(function() {
 
     //     // promise2.then(function (response) {
     //     //     let body = JSON.parse(response);
-    //     //     let nameList = body;
 
     //     // });
     // });
