@@ -24,9 +24,15 @@ Here are the following things your application must do. Read through the list ca
 
 
 ## Setup/Installation Requirements
+
+* Open a web browser and navigate to https://developer.betterdoctor.com/ 
+* Create an account and follow the instructions given to gain an API key
 * Open a terminal application(I suggest gitbash)
+* Create a new file called .env and enter:
+///
+API_KEY=[API_KEY GOES HERE]
 * In a terminal application type: $ git clone https://github.com/kennethdu/DoctorLookup
-* Navigate to the /package.json file
+* Navigate to the root directoy /package.json file
 * In a terminal application type: '$ npm install' in a terminal application to install necessary packages 
 * In a terminal application type: '$ npm start' to start a test server 
 * User may follow along the website and input forms according to how they would like 
