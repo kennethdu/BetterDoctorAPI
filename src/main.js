@@ -36,19 +36,27 @@ $(document).ready(function() {
                 }
             });
         });
+    
+    
+    $("#issueForm").submit(function (event) {
+        event.preventDefault();
+        $("#nameResults").text("");
+        $("#issueResults").text("");
+        let issue = $("#issue").val();
+        let promise2 = getIssue(issue);
+
+        promise2.then(function (response) {
+            let body = JSON.parse(response);
+            if (body.data.length > 0) {
+                for (let i = 0; i < body.data.length; i++) {
+                    $("#issueResults").append(`<h1>${body.data[i].practices[0].name}</h1>`);
+                }
+            } else {
+                $("#issueResults").append("There are no doctors matching your criteria, try again!");
+            }
+        });
     });
+});
 
-    // $("#issueForm").submit(function (event) {
-    //     event.preventDefault();
-    //     $("#nameResults").text("");
-    //     $("#issueResults").text("");
-    //     let issue = $("#issue").val();
-    //     // let promise2 = getIssue(issue);
 
-    //     // promise2.then(function (response) {
-    //     //     let body = JSON.parse(response);
 
-    //     // });
-    // });
-
-// });
