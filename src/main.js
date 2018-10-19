@@ -10,7 +10,7 @@ $(document).ready(function() {
         event.preventDefault();
         $("nameResults").text("");
         $("issueResults").text("");
-        let name = $("name").val();
+        let name = $("#name").val();
         // let promise1 = getDoctor(name);
 
         // promise1.then(function(response){
@@ -20,11 +20,11 @@ $(document).ready(function() {
         });
     });
 
-    $("#nameForm").submit(function (event) {
+    $("#issueForm").submit(function (event) {
         event.preventDefault();
         $("nameResults").text("");
         $("issueResults").text("");
-        let issue = $("issue").val();
+        let issue = $("#issue").val();
         // let promise2 = getIssue(issue);
 
         // promise2.then(function (response) {
