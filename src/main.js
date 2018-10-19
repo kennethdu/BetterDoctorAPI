@@ -20,6 +20,9 @@ $(document).ready(function() {
         promise1.then(function(response){
             let body = JSON.parse(response);
             if(body.data.length > 0){
+                for(let i =0; i < body.data.length; i++){
+                    $("#nameResults").append(`<h2>${body.data[i].practices[0].visit_address.street}</h2>`);
+                }
             }else{
                 $("#nameResult").append("There are no doctors matching your criteria");
                 }
