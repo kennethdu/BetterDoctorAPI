@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BetterDoctorAPI</title>
+    <title>BetterDoctorAPI: Asynchrony and APIs</title>
   </head>
   <body>
-    <h1>Doctor Lookup</h1>
+    <h1 class="center">Doctor Lookup: Better Doctor API</h1>
+    <div class="container">
+      <img src="https://openclipart.org/download/216846/doctor_white_coat.svg" alt="docPic">
+      <button id ="nameSearch" class="btn btn-primary center">Search By Name</button>
+      <button id="issueSearch" class="btn btn-danger center">Search By Medical Issue</button>
+    </div>
+
       <form id="nameForm">
       <div class="form-group">
-        <h2>Search by name:</h2>
+        <h2 class="center">Search for a doctor by name</h2>
         <label for="name">First Name</label>
         <input id="firstName" class="form-control" type="text">
         <label for="name">Last Name</label>
         <input id="lastName" class="form-control" type="text">
       </div>
-      <button id="name" type="submit">Submit</button>
+      <button id="name" type="submit" class="btn btn-info">Submit</button>
       </form>
-      <h2>Search by medical issue:</h2>
+      
       <form id="issueForm">
-      <div class="form-group">
+        <div class="form-group">
+        <h2 class="center">Search for a doctor by medical issue</h2>
         <label for="issue">Medical Issue</label>
         <input id="issue" class="form-control" type="text">
       </div>
-      <button id ="issue" type ="submit">Submit</button>
+      <button id ="issue" type ="submit" class="btn btn-info">Submit</button>
       </form>
 
       <div id="nameResults"></div>

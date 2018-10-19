@@ -1,0 +1,15 @@
+#nameForm{
+    display: none;
+}
+
+#issueForm{
+    display: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    margin-left: 30%;
+}

@@ -33,3 +33,4 @@ export function getIssue(issue){
         request.send();
     });
 }
+

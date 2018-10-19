@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,6 +6,7 @@ import './styles.css';
 import { getIssue, getDoctor } from './doctor.js';
 
 $(document).ready(function() {
+
     $("#nameForm").submit(function(event){
         event.preventDefault();
         $("#nameResults").text("");
@@ -32,9 +32,9 @@ $(document).ready(function() {
                 }
             }else{
                 $("#nameResult").append("There are no doctors matching your criteria, try again!");
-                }
-            });
+            }
         });
+    });
     
     
     $("#issueForm").submit(function (event) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
         $("#issueResults").text("");
         let issue = $("#issue").val();
         let promise2 = getIssue(issue);
-
+        
         promise2.then(function (response) {
             let body = JSON.parse(response);
             if (body.data.length > 0) {
@@ -64,6 +64,17 @@ $(document).ready(function() {
             }
         });
     });
+
+    $("#nameSearch").click(function(){
+        $("#nameForm").show();
+        $("#issueForm").hide();
+    });
+    
+    $("#issueSearch").click(function(){
+        $("#nameForm").hide();
+        $("#issueForm").show();
+    });
+
 });
 
 
