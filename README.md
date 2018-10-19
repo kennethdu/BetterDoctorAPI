@@ -29,8 +29,9 @@ Here are the following things your application must do. Read through the list ca
 * Create an account and follow the instructions given to gain an API key
 * Open a terminal application(I suggest gitbash)
 * Create a new file called .env and enter:
-///
+```
 API_KEY=[API_KEY GOES HERE]
+```
 * In a terminal application type: $ git clone https://github.com/kennethdu/DoctorLookup
 * Navigate to the root directoy /package.json file
 * In a terminal application type: '$ npm install' in a terminal application to install necessary packages 
